@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Средства для зрения</title>
+    <meta
+      name="description"
+      content="Краткое описание вашей страницы, включающее ключевые слова."
+    />
+    <meta
+      name="keywords"
+      content="ключевое слово 1, ключевое слово 2, ключевое слово 3"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Название вашей страницы" />
+    <meta property="og:description" content="Краткое описание для соцсетей" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://вашсайт.ру/страница" />
+    <meta
+      property="og:image"
+      content="https://вашсайт.ру/images/имя_изображения.jpg"
+    />
+    <link
+      href="
+    https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="preload"
+      href="css/styles.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="css/styles-category.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <script src="js/burger.js" defer></script>
+    <script src="js/category.js" defer></script>
+  </head>
+  <body class="page__body">
+    <header class="header-block">
+      <div class="container">
+        <div class="header-block__btn">
+          <a href="index.html" class="btn--secondary btn btn-reset">
+            <div class="btn__inner">
+              <svg
+                width="32"
+                height="19"
+                viewBox="0 0 32 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 10.5H25C25.56 10.5 26 10.06 26 9.5C26 8.94 25.56 8.5 25 8.5H7C6.44 8.5 6 8.94 6 9.5C6 10.06 6.44 10.5 7 10.5Z"
+                  fill="#155DFC"
+                />
+                <path
+                  d="M12 17.5C12.1312 17.5016 12.2612 17.4757 12.3817 17.4241C12.5023 17.3724 12.6107 17.2961 12.7 17.2C13.1 16.8 13.1 16.18 12.7 15.78L6.4 9.48L12.7 3.18C13.1 2.78 13.1 2.16 12.7 1.76C12.3 1.36 11.68 1.36 11.28 1.76L4.28 8.76C3.88 9.16 3.88 9.78 4.28 10.18L11.28 17.18C11.48 17.38 11.74 17.48 11.98 17.48L12 17.5Z"
+                  fill="#155DFC"
+                />
+              </svg>
+
+              <span>Вернуться на главную</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="header-block__container">
+          <span class="header-block__icon">
+          <svg width="74" height="26" viewBox="0 0 74 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.0955 1.15785C22.2127 1.16636 22.33 1.17486 22.4508 1.18362C25.6489 1.42387 28.5994 1.9614 31.5089 3.34999C34.2466 4.6547 36.6851 5.63399 39.6818 4.58831C40.6866 4.20968 41.6487 3.73943 42.6176 3.27753C45.321 1.99527 47.8852 1.53342 50.8499 1.2575C51.001 1.24236 51.1522 1.22723 51.3079 1.21164C56.714 0.68664 62.3427 0.672503 67.7292 1.40243C67.896 1.42492 68.0629 1.44741 68.2347 1.47058C68.7102 1.53722 69.1846 1.60839 69.6588 1.68324C69.7926 1.70431 69.9264 1.72537 70.0642 1.74708C71.4699 1.99314 72.6907 2.29538 73.6093 3.44567C74.108 4.21296 73.9705 5.17041 73.9753 6.05288C73.977 6.2609 73.9799 6.46893 73.9842 6.67692C74.0276 8.78896 74.0276 8.78896 73.3557 9.66372C72.9121 10.2683 72.6893 10.7402 72.5583 11.4788C72.508 11.7521 72.508 11.7521 72.4568 12.0309C72.4401 12.1265 72.4235 12.2221 72.4064 12.3206C72.3541 12.6211 72.2993 12.9211 72.2439 13.221C72.1687 13.628 72.0942 14.0351 72.0203 14.4423C71.0361 19.8326 71.0361 19.8326 69.749 21.5484C69.6657 21.6739 69.5824 21.7995 69.4965 21.9288C66.8899 24.693 62.4935 25.2406 58.9066 25.3505C53.9209 25.4712 48.2211 25.0908 44.4097 21.477C41.6759 18.638 40.2957 14.5087 39.3985 10.7518C39.3097 10.3735 39.3097 10.3735 39.1642 9.95359C38.4432 9.67643 37.7706 9.61859 37.0001 9.62749C36.9031 9.62637 36.806 9.62525 36.706 9.62409C36.0389 9.62668 35.4557 9.70085 34.8361 9.95359C34.6515 10.2284 34.6515 10.2284 34.6107 10.5877C33.6331 15.1199 31.7789 20.2239 27.8121 22.9524C22.5448 26.0199 15.0339 26.0017 9.28265 24.5558C7.16236 23.9747 5.02199 22.9571 3.85175 21.0043C3.76388 20.8432 3.76388 20.8432 3.67424 20.6788C3.62309 20.5878 3.57195 20.4968 3.51926 20.4031C2.4051 18.1689 2.1433 15.4566 1.72644 13.0212C1.69549 12.8444 1.69549 12.8444 1.66392 12.664C1.62508 12.4419 1.58721 12.2197 1.55053 11.9974C1.39168 11.0968 1.12051 10.2877 0.554439 9.55502C-0.0896715 8.71577 0.0305749 7.76543 0.0249518 6.7525C0.0232928 6.54447 0.0203468 6.33645 0.0160759 6.12846C-0.0278772 3.98676 -0.0278772 3.98676 0.644607 3.14165C4.55926 -0.882553 17.0873 0.788396 22.0955 1.15785ZM6.09072 6.05847C4.84167 7.63398 4.62974 9.63104 4.63903 11.566C4.63974 11.7398 4.64045 11.9136 4.64118 12.0926C4.67798 14.8924 5.36199 17.9574 7.317 20.0719C10.3611 22.8526 14.9334 23.0141 18.8224 22.8528C19.7044 22.7821 20.5595 22.6249 21.4192 22.418C21.5735 22.3818 21.5735 22.3818 21.7309 22.345C23.971 21.8023 25.846 20.8903 27.4785 19.2294C27.5992 19.1155 27.7198 19.0015 27.8442 18.8841C30.0435 16.5381 31.46 12.2052 31.3929 9.02793C31.3426 8.03487 31.2864 7.31212 30.5532 6.58385C26.5725 3.4203 19.4945 3.84583 14.7288 3.83009C14.6114 3.82933 14.4941 3.82857 14.3732 3.82778C11.5041 3.81329 8.21385 3.83913 6.09072 6.05847ZM43.3299 6.71067C42.5843 7.65949 42.5372 8.77169 42.6266 9.95359C43.0642 13.3461 44.3356 17.6127 47.0668 19.8596C50.8354 22.6741 55.6255 23.3356 60.2048 22.7332C62.8172 22.3274 65.3439 21.5535 67.1522 19.5193C69.2363 16.571 69.6942 12.8258 69.2722 9.29601C68.9996 7.72404 68.3118 6.26337 67.0648 5.24774C64.7809 3.7805 61.9315 3.83576 59.3256 3.83915C59.2017 3.83924 59.0779 3.83933 58.9502 3.83942C50.6745 3.61354 50.6745 3.61354 43.3299 6.71067ZM1.65448 5.46061C1.65448 5.84324 1.65448 6.22587 1.65448 6.62009C2.08296 6.42877 2.51144 6.23746 2.9529 6.04035C2.56545 5.65112 2.17728 5.59678 1.65448 5.46061ZM71.0474 5.89541C71.4123 6.34351 71.8011 6.46201 72.3458 6.62009C72.3458 6.23746 72.3458 5.85483 72.3458 5.46061C71.8692 5.46061 71.4772 5.70353 71.0474 5.89541Z" fill="white"/>
+</svg>
+        </span>
+          <div class="header-block__right">
+            <h1 class="header-block__title title-h1">Средства для зрения</h1>
+            <p class="header-block__descr text-large-medium">
+              Очки, контактные линзы, приборы для слабовидящих
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </header>
+    <div class="line"></div>
+    
+    <main>
+      <section class="about-category">
+        <div class="container">
+          <div class="about-category__inner">
+            <h2 class="about-category__title title-h4">О категории</h2>
+            <p class="about-category__descr text">Технические средства реабилитации для людей с нарушениями зрения включают широкий спектр устройств: от традиционных очков и контактных линз до современных электронных увеличителей и голосовых систем. Сюда входят лупы различной кратности, телескопические системы, приборы для чтения, компьютерные программы экранного доступа и брайлевские дисплеи.</p>
+          </div>
+
+        </div>
+      </section>
+      <section class="category-filter">
+        <div class="container">
+          <div class="category-filter__container">
+            <h2 class="category-filter__title title-h4">
+              <svg
+                aria-hidden="true"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.75 6.75C4.75 6.19772 5.19772 5.75 5.75 5.75H18.25C18.8023 5.75 19.25 6.19772 19.25 6.75V8.54137C19.25 8.91334 19.0443 9.25538 18.7161 9.42949L13.25 12.5L13.25 18.25L10.75 19.75V12.5L5.28394 9.42949C4.95573 9.25538 4.75 8.91334 4.75 8.54137V6.75Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Фильтры
+            </h2>
+            <form class="category-filter__form" id="category-filters-form">
+              <div class="category-filter__main">
+                <div class="category-filter__group">
+                  <label
+                    for="category-search"
+                    class="category-filter__label text-large-bold"
+                    >Поиск</label
+                  >
+                  <div class="category-filter__search-wrapper">
+                    <svg
+                      aria-hidden="true"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.25 18.25C14.5338 18.25 18.25 14.5338 18.25 10.25C18.25 5.96624 14.5338 2.25 10.25 2.25C5.96624 2.25 2.25 5.96624 2.25 10.25C2.25 14.5338 5.96624 18.25 10.25 18.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M16.75 16.75L21.25 21.25"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <input
+                      type="search"
+                      id="category-search"
+                      name="query"
+                      class="category-filter__search-input"
+                      placeholder="Поиск по названию..."
+                    />
+                  </div>
+                </div>
+
+                <div class="category-filter__group">
+                  <h3 class="category-filter__label text-large-bold">Регион</h3>
+                  <ul class="category-filter__options-list">
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="region-all"
+                        name="region"
+                        value="all"
+                        checked
+                      />
+                      <label for="region-all text-large">Все регионы</label>
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="region-mo"
+                        name="region"
+                        value="mo"
+                      />
+                      <label for="region-mo text-large"
+                        >Московская область</label
+                      >
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="region-spb"
+                        name="region"
+                        value="spb"
+                      />
+                      <label for="region-spb text-large"
+                        >Новосибирская область</label
+                      >
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="region-spb"
+                        name="region"
+                        value="spb"
+                      />
+                      <label for="region-spb text-large"
+                        >Ростовская область</label
+                      >
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="region-spb"
+                        name="region"
+                        value="spb"
+                      />
+                      <label for="region-spb text-large"
+                        >Свердловская область</label
+                      >
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="region-spb"
+                        name="region"
+                        value="spb"
+                      />
+                      <label for="region-spb text-large"
+                        >Нижегородская область</label
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="category-filter__group">
+                  <h3 class="category-filter__label text-large-bold">
+                    Тип продукции
+                  </h3>
+                  <ul class="category-filter__options-list">
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="type-all"
+                        name="type"
+                        value="all"
+                        checked
+                      />
+                      <label for="type-all text-large">Все типы</label>
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="type-arm"
+                        name="type"
+                        value="prosthesis-arm"
+                      />
+                      <label for="type-arm text-large">Протезы рук</label>
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="type-leg"
+                        name="type"
+                        value="prosthesis-leg"
+                      />
+                      <label for="type-leg text-large">Протезы ног</label>
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="type-leg"
+                        name="type"
+                        value="prosthesis-leg"
+                      />
+                      <label for="type-leg text-large"
+                        >Миоэлектрические протезы</label
+                      >
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="type-leg"
+                        name="type"
+                        value="prosthesis-leg"
+                      />
+                      <label for="type-leg text-large">Ортезы</label>
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="type-leg"
+                        name="type"
+                        value="prosthesis-leg"
+                      />
+                      <label for="type-leg text-large">Корсеты</label>
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="type-leg"
+                        name="type"
+                        value="prosthesis-leg"
+                      />
+                      <label for="type-leg text-large">Слуховые аппараты</label>
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="type-leg"
+                        name="type"
+                        value="prosthesis-leg"
+                      />
+                      <label for="type-leg text-large"
+                        >Косметические протезы</label
+                      >
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="type-leg"
+                        name="type"
+                        value="prosthesis-leg"
+                      />
+                      <label for="type-leg text-large">3D-протезы</label>
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="type-leg"
+                        name="type"
+                        value="prosthesis-leg"
+                      />
+                      <label for="type-leg text-large"
+                        >Спортивные протезы</label
+                      >
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="type-leg"
+                        name="type"
+                        value="prosthesis-leg"
+                      />
+                      <label for="type-leg text-large">Детские протезы</label>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="category-filter__group">
+                  <h3 class="category-filter__label text-large-bold">
+                    Сертификация
+                  </h3>
+                  <ul class="category-filter__options-list">
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="cert-all"
+                        name="cert"
+                        value="all"
+                        checked
+                      />
+                      <label for="cert-all text-large">Все сертификаты</label>
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="cert-iso"
+                        name="cert"
+                        value="iso13485"
+                      />
+                      <label for="cert-iso text-large">ISO 13485</label>
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="cert-gost"
+                        name="cert"
+                        value="gost-r"
+                      />
+                      <label for="cert-gost text-large">ГОСТ Р ИСО</label>
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="cert-gost"
+                        name="cert"
+                        value="gost-r"
+                      />
+                      <label for="cert-gost text-large">ISO 9001</label>
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="cert-gost"
+                        name="cert"
+                        value="gost-r"
+                      />
+                      <label for="cert-gost text-large">CE</label>
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="cert-gost"
+                        name="cert"
+                        value="gost-r"
+                      />
+                      <label for="cert-gost text-large">Росздравнадзор</label>
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="cert-gost"
+                        name="cert"
+                        value="gost-r"
+                      />
+                      <label for="cert-gost text-large">ГОСТ Р</label>
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="cert-gost"
+                        name="cert"
+                        value="gost-r"
+                      />
+                      <label for="cert-gost text-large">FDA</label>
+                    </li>
+                    <li class="category-filter__option">
+                      <input
+                        type="radio"
+                        id="cert-gost"
+                        name="cert"
+                        value="gost-r"
+                      />
+                      <label for="cert-gost text-large">Минздрав РФ</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="category-filter__footer">
+                <p class="category-filter__counter">Найдено новостей: 6</p>
+                <button type="reset" class="category-filter__reset-button">
+                  Сбросить фильтры
+                  <svg
+                    aria-hidden="true"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.75 6.75C4.75 6.19772 5.19772 5.75 5.75 5.75H18.25C18.8023 5.75 19.25 6.19772 19.25 6.75V8.54137C19.25 8.91334 19.0443 9.25538 18.7161 9.42949L13.25 12.5L13.25 18.25L10.75 19.75V12.5L5.28394 9.42949C4.95573 9.25538 4.75 8.91334 4.75 8.54137V6.75Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="producers">
+        <div class="container">
+          <ul class="producers__list list-reset">
+            <li class="producers__item">
+              <article class="producer-item-card">
+                <div class="producer-item-card__header">
+                  <div class="producer-item-card__main-info">
+                    <h3 class="producer-item-card__title title-h3">
+                      ПротезТех
+                    </h3>
+                    <p class="producer-item-card__description text">
+                      Ведущий производитель протезов верхних и нижних
+                      конечностей с использованием современных технологий
+                    </p>
+                  </div>
+                  <span class="producer-item-card__badge">Работает с 2010</span>
+                </div>
+
+                <div class="producer-item-card__meta">
+                  <span class="producer-item-card__meta-item">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 12.25C13.2426 12.25 14.25 11.2426 14.25 10C14.25 8.75736 13.2426 7.75 12 7.75C10.7574 7.75 9.75 8.75736 9.75 10C9.75 11.2426 10.7574 12.25 12 12.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M12 21.25C12 21.25 5.75 15.6233 5.75 12.0674C5.75 8.51145 8.51145 5.75 12 5.75C15.4886 5.75 18.25 8.51145 18.25 12.0674C18.25 15.6233 12 21.25 12 21.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      />
+                    </svg>
+                    Московская область
+                  </span>
+                  <span class="producer-item-card__meta-item">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.75 8.25C8.75 8.25 8.75 3.75 12.25 3.75C15.75 3.75 15.75 8.25 15.75 8.25M6.75 15.25V19.25C6.75 20.3546 7.64543 21.25 8.75 21.25H15.75C16.8546 21.25 17.75 20.3546 17.75 19.25V15.25L15.25 8.25H9.25L6.75 15.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    Миоэлектрические протезы
+                  </span>
+                  <span class="producer-item-card__meta-item">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.125 21.25H6.875C5.17891 21.25 3.75 19.8211 3.75 18.125V5.875C3.75 4.17891 5.17891 2.75 6.875 2.75H17.125C18.8211 2.75 20.25 4.17891 20.25 5.875V11.5M8.125 21.25H12.875C14.5711 21.25 16 19.8211 16 18.125C16 16.4289 14.5711 15 12.875 15H11.5C9.29086 15 7.5 13.2091 7.5 11C7.5 8.79086 9.29086 7 11.5 7H16.25M8.125 21.25C6.42891 21.25 5 19.8211 5 18.125V17.375M16.5 19.25C17.6046 19.25 18.5 18.3546 18.5 17.25C18.5 16.1454 17.6046 15.25 16.5 15.25C15.3954 15.25 14.5 16.1454 14.5 17.25C14.5 18.3546 15.3954 19.25 16.5 19.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    2 сертификат(а)
+                  </span>
+                </div>
+
+                <div class="producer-item-card__tags-group">
+                  <h4 class="producer-item-card__tags-heading text-medium">
+                    Продукция
+                  </h4>
+                  <div class="producer-item-card__tags">
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--product"
+                      >Протезы рук</span
+                    >
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--product"
+                      >Протезы ног</span
+                    >
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--product"
+                      >Косметические протезы</span
+                    >
+                  </div>
+                </div>
+
+                <div class="producer-item-card__tags-group">
+                  <h4 class="producer-item-card__tags-heading text-medium">
+                    Сертификация
+                  </h4>
+                  <div class="producer-item-card__tags">
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--cert"
+                      >ISO 13485</span
+                    >
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--cert"
+                      >ГОСТ Р ИСО</span
+                    >
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="producers__item">
+              <article class="producer-item-card">
+                <div class="producer-item-card__header">
+                  <div class="producer-item-card__main-info">
+                    <h3 class="producer-item-card__title title-h3">
+                      Реабилитация Плюс
+                    </h3>
+                    <p class="producer-item-card__description text">
+                      Специализируется на изготовлении индивидуальных протезно-ортопедических изделий
+                    </p>
+                  </div>
+                  <span class="producer-item-card__badge">Работает с 2005</span>
+                </div>
+
+                <div class="producer-item-card__meta">
+                  <span class="producer-item-card__meta-item">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 12.25C13.2426 12.25 14.25 11.2426 14.25 10C14.25 8.75736 13.2426 7.75 12 7.75C10.7574 7.75 9.75 8.75736 9.75 10C9.75 11.2426 10.7574 12.25 12 12.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M12 21.25C12 21.25 5.75 15.6233 5.75 12.0674C5.75 8.51145 8.51145 5.75 12 5.75C15.4886 5.75 18.25 8.51145 18.25 12.0674C18.25 15.6233 12 21.25 12 21.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      />
+                    </svg>
+                   Санкт-Петербург
+                  </span>
+                  <span class="producer-item-card__meta-item">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.75 8.25C8.75 8.25 8.75 3.75 12.25 3.75C15.75 3.75 15.75 8.25 15.75 8.25M6.75 15.25V19.25C6.75 20.3546 7.64543 21.25 8.75 21.25H15.75C16.8546 21.25 17.75 20.3546 17.75 19.25V15.25L15.25 8.25H9.25L6.75 15.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    Индивидуальные протезы
+                  </span>
+                  <span class="producer-item-card__meta-item">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.125 21.25H6.875C5.17891 21.25 3.75 19.8211 3.75 18.125V5.875C3.75 4.17891 5.17891 2.75 6.875 2.75H17.125C18.8211 2.75 20.25 4.17891 20.25 5.875V11.5M8.125 21.25H12.875C14.5711 21.25 16 19.8211 16 18.125C16 16.4289 14.5711 15 12.875 15H11.5C9.29086 15 7.5 13.2091 7.5 11C7.5 8.79086 9.29086 7 11.5 7H16.25M8.125 21.25C6.42891 21.25 5 19.8211 5 18.125V17.375M16.5 19.25C17.6046 19.25 18.5 18.3546 18.5 17.25C18.5 16.1454 17.6046 15.25 16.5 15.25C15.3954 15.25 14.5 16.1454 14.5 17.25C14.5 18.3546 15.3954 19.25 16.5 19.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    2 сертификат(а)
+                  </span>
+                </div>
+
+                <div class="producer-item-card__tags-group">
+                  <h4 class="producer-item-card__tags-heading text-medium">
+                    Продукция
+                  </h4>
+                  <div class="producer-item-card__tags">
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--product"
+                      >Протезы ног</span
+                    >
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--product"
+                      >Ортезы</span
+                    >
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--product"
+                      >Корсеты</span
+                    >
+                  </div>
+                </div>
+
+                <div class="producer-item-card__tags-group">
+                  <h4 class="producer-item-card__tags-heading text-medium">
+                    Сертификация
+                  </h4>
+                  <div class="producer-item-card__tags">
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--cert"
+                      >ISO 9001</span
+                    >
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--cert"
+                      >СЕ</span
+                    >
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="producers__item">
+              <article class="producer-item-card">
+                <div class="producer-item-card__header">
+                  <div class="producer-item-card__main-info">
+                    <h3 class="producer-item-card__title title-h3">
+                      МедТехника Сибирь
+                    </h3>
+                    <p class="producer-item-card__description text">
+                      Производство протезов и технических средств реабилитации для жителей Сибирского региона
+                    </p>
+                  </div>
+                  <span class="producer-item-card__badge">Работает с 2008</span>
+                </div>
+
+                <div class="producer-item-card__meta">
+                  <span class="producer-item-card__meta-item">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 12.25C13.2426 12.25 14.25 11.2426 14.25 10C14.25 8.75736 13.2426 7.75 12 7.75C10.7574 7.75 9.75 8.75736 9.75 10C9.75 11.2426 10.7574 12.25 12 12.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M12 21.25C12 21.25 5.75 15.6233 5.75 12.0674C5.75 8.51145 8.51145 5.75 12 5.75C15.4886 5.75 18.25 8.51145 18.25 12.0674C18.25 15.6233 12 21.25 12 21.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      />
+                    </svg>
+                    Новосибирская область
+                  </span>
+                  <span class="producer-item-card__meta-item">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.75 8.25C8.75 8.25 8.75 3.75 12.25 3.75C15.75 3.75 15.75 8.25 15.75 8.25M6.75 15.25V19.25C6.75 20.3546 7.64543 21.25 8.75 21.25H15.75C16.8546 21.25 17.75 20.3546 17.75 19.25V15.25L15.25 8.25H9.25L6.75 15.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    Функциональные протезы
+                  </span>
+                  <span class="producer-item-card__meta-item">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.125 21.25H6.875C5.17891 21.25 3.75 19.8211 3.75 18.125V5.875C3.75 4.17891 5.17891 2.75 6.875 2.75H17.125C18.8211 2.75 20.25 4.17891 20.25 5.875V11.5M8.125 21.25H12.875C14.5711 21.25 16 19.8211 16 18.125C16 16.4289 14.5711 15 12.875 15H11.5C9.29086 15 7.5 13.2091 7.5 11C7.5 8.79086 9.29086 7 11.5 7H16.25M8.125 21.25C6.42891 21.25 5 19.8211 5 18.125V17.375M16.5 19.25C17.6046 19.25 18.5 18.3546 18.5 17.25C18.5 16.1454 17.6046 15.25 16.5 15.25C15.3954 15.25 14.5 16.1454 14.5 17.25C14.5 18.3546 15.3954 19.25 16.5 19.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    2 сертификат(а)
+                  </span>
+                </div>
+
+                <div class="producer-item-card__tags-group">
+                  <h4 class="producer-item-card__tags-heading text-medium">
+                    Продукция
+                  </h4>
+                  <div class="producer-item-card__tags">
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--product"
+                      >Протезы рук</span
+                    >
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--product"
+                      >Протезы ног</span
+                    >
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--product"
+                      >Слуховые аппараты</span
+                    >
+                  </div>
+                </div>
+
+                <div class="producer-item-card__tags-group">
+                  <h4 class="producer-item-card__tags-heading text-medium">
+                    Сертификация
+                  </h4>
+                  <div class="producer-item-card__tags">
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--cert"
+                      >ГОСТ Р ИСО</span
+                    >
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--cert"
+                      >Росздравнадзор</span
+                    >
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="producers__item">
+              <article class="producer-item-card">
+                <div class="producer-item-card__header">
+                  <div class="producer-item-card__main-info">
+                    <h3 class="producer-item-card__title title-h3">
+                      Южный Протез
+                    </h3>
+                    <p class="producer-item-card__description text">
+                      Региональный центр протезирования с собственным производством и сервисным центром
+                    </p>
+                  </div>
+                  <span class="producer-item-card__badge">Работает с 2012</span>
+                </div>
+
+                <div class="producer-item-card__meta">
+                  <span class="producer-item-card__meta-item">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 12.25C13.2426 12.25 14.25 11.2426 14.25 10C14.25 8.75736 13.2426 7.75 12 7.75C10.7574 7.75 9.75 8.75736 9.75 10C9.75 11.2426 10.7574 12.25 12 12.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M12 21.25C12 21.25 5.75 15.6233 5.75 12.0674C5.75 8.51145 8.51145 5.75 12 5.75C15.4886 5.75 18.25 8.51145 18.25 12.0674C18.25 15.6233 12 21.25 12 21.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      />
+                    </svg>
+                   Ростовская область
+                  </span>
+                  <span class="producer-item-card__meta-item">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.75 8.25C8.75 8.25 8.75 3.75 12.25 3.75C15.75 3.75 15.75 8.25 15.75 8.25M6.75 15.25V19.25C6.75 20.3546 7.64543 21.25 8.75 21.25H15.75C16.8546 21.25 17.75 20.3546 17.75 19.25V15.25L15.25 8.25H9.25L6.75 15.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    Косметические протезы
+                  </span>
+                  <span class="producer-item-card__meta-item">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.125 21.25H6.875C5.17891 21.25 3.75 19.8211 3.75 18.125V5.875C3.75 4.17891 5.17891 2.75 6.875 2.75H17.125C18.8211 2.75 20.25 4.17891 20.25 5.875V11.5M8.125 21.25H12.875C14.5711 21.25 16 19.8211 16 18.125C16 16.4289 14.5711 15 12.875 15H11.5C9.29086 15 7.5 13.2091 7.5 11C7.5 8.79086 9.29086 7 11.5 7H16.25M8.125 21.25C6.42891 21.25 5 19.8211 5 18.125V17.375M16.5 19.25C17.6046 19.25 18.5 18.3546 18.5 17.25C18.5 16.1454 17.6046 15.25 16.5 15.25C15.3954 15.25 14.5 16.1454 14.5 17.25C14.5 18.3546 15.3954 19.25 16.5 19.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    2 сертификат(а)
+                  </span>
+                </div>
+
+                <div class="producer-item-card__tags-group">
+                  <h4 class="producer-item-card__tags-heading text-medium">
+                    Продукция
+                  </h4>
+                  <div class="producer-item-card__tags">
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--product"
+                      >Протезы рук</span
+                    >
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--product"
+                      >Протезы ног</span
+                    >
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--product"
+                      >Косметические протезы</span
+                    >
+                  </div>
+                </div>
+
+                <div class="producer-item-card__tags-group">
+                  <h4 class="producer-item-card__tags-heading text-medium">
+                    Сертификация
+                  </h4>
+                  <div class="producer-item-card__tags">
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--cert"
+                      >ISO 13485</span
+                    >
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--cert"
+                      >ГОСТ Р</span
+                    >
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="producers__item">
+              <article class="producer-item-card">
+                <div class="producer-item-card__header">
+                  <div class="producer-item-card__main-info">
+                    <h3 class="producer-item-card__title title-h3">
+                      Уральские Технологии
+                    </h3>
+                    <p class="producer-item-card__description text">
+                     Инновационные решения в области протезирования с использованием 3D-печати
+                    </p>
+                  </div>
+                  <span class="producer-item-card__badge">Работает с 2015</span>
+                </div>
+
+                <div class="producer-item-card__meta">
+                  <span class="producer-item-card__meta-item">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 12.25C13.2426 12.25 14.25 11.2426 14.25 10C14.25 8.75736 13.2426 7.75 12 7.75C10.7574 7.75 9.75 8.75736 9.75 10C9.75 11.2426 10.7574 12.25 12 12.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M12 21.25C12 21.25 5.75 15.6233 5.75 12.0674C5.75 8.51145 8.51145 5.75 12 5.75C15.4886 5.75 18.25 8.51145 18.25 12.0674C18.25 15.6233 12 21.25 12 21.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      />
+                    </svg>
+                   Свердловская область
+                  </span>
+                  <span class="producer-item-card__meta-item">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.75 8.25C8.75 8.25 8.75 3.75 12.25 3.75C15.75 3.75 15.75 8.25 15.75 8.25M6.75 15.25V19.25C6.75 20.3546 7.64543 21.25 8.75 21.25H15.75C16.8546 21.25 17.75 20.3546 17.75 19.25V15.25L15.25 8.25H9.25L6.75 15.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    3D-технологии
+                  </span>
+                  <span class="producer-item-card__meta-item">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.125 21.25H6.875C5.17891 21.25 3.75 19.8211 3.75 18.125V5.875C3.75 4.17891 5.17891 2.75 6.875 2.75H17.125C18.8211 2.75 20.25 4.17891 20.25 5.875V11.5M8.125 21.25H12.875C14.5711 21.25 16 19.8211 16 18.125C16 16.4289 14.5711 15 12.875 15H11.5C9.29086 15 7.5 13.2091 7.5 11C7.5 8.79086 9.29086 7 11.5 7H16.25M8.125 21.25C6.42891 21.25 5 19.8211 5 18.125V17.375M16.5 19.25C17.6046 19.25 18.5 18.3546 18.5 17.25C18.5 16.1454 17.6046 15.25 16.5 15.25C15.3954 15.25 14.5 16.1454 14.5 17.25C14.5 18.3546 15.3954 19.25 16.5 19.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    3 сертификат(а)
+                  </span>
+                </div>
+
+                <div class="producer-item-card__tags-group">
+                  <h4 class="producer-item-card__tags-heading text-medium">
+                    Продукция
+                  </h4>
+                  <div class="producer-item-card__tags">
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--product"
+                      >3D-протезы</span
+                    >
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--product"
+                      >Миоэлектрические протезы</span
+                    >
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--product"
+                      >Спортивные протезы</span
+                    >
+                  </div>
+                </div>
+
+                <div class="producer-item-card__tags-group">
+                  <h4 class="producer-item-card__tags-heading text-medium">
+                    Сертификация
+                  </h4>
+                  <div class="producer-item-card__tags">
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--cert"
+                      >ISO9001</span
+                    >
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--cert"
+                      >СЕ</span
+                    >
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--cert"
+                      >FDA</span
+                    >
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="producers__item">
+              <article class="producer-item-card">
+                <div class="producer-item-card__header">
+                  <div class="producer-item-card__main-info">
+                    <h3 class="producer-item-card__title title-h3">
+                      ВолгаПротез
+                    </h3>
+                    <p class="producer-item-card__description text">
+                      Полный цикл производства протезно-ортопедических изделий от консультации до изготовления
+                  </div>
+                  <span class="producer-item-card__badge">Работает с 2007</span>
+                </div>
+
+                <div class="producer-item-card__meta">
+                  <span class="producer-item-card__meta-item">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 12.25C13.2426 12.25 14.25 11.2426 14.25 10C14.25 8.75736 13.2426 7.75 12 7.75C10.7574 7.75 9.75 8.75736 9.75 10C9.75 11.2426 10.7574 12.25 12 12.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M12 21.25C12 21.25 5.75 15.6233 5.75 12.0674C5.75 8.51145 8.51145 5.75 12 5.75C15.4886 5.75 18.25 8.51145 18.25 12.0674C18.25 15.6233 12 21.25 12 21.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      />
+                    </svg>
+                    Нижегородская область
+                  </span>
+                  <span class="producer-item-card__meta-item">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.75 8.25C8.75 8.25 8.75 3.75 12.25 3.75C15.75 3.75 15.75 8.25 15.75 8.25M6.75 15.25V19.25C6.75 20.3546 7.64543 21.25 8.75 21.25H15.75C16.8546 21.25 17.75 20.3546 17.75 19.25V15.25L15.25 8.25H9.25L6.75 15.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    Детское протезирование
+                  </span>
+                  <span class="producer-item-card__meta-item">
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.125 21.25H6.875C5.17891 21.25 3.75 19.8211 3.75 18.125V5.875C3.75 4.17891 5.17891 2.75 6.875 2.75H17.125C18.8211 2.75 20.25 4.17891 20.25 5.875V11.5M8.125 21.25H12.875C14.5711 21.25 16 19.8211 16 18.125C16 16.4289 14.5711 15 12.875 15H11.5C9.29086 15 7.5 13.2091 7.5 11C7.5 8.79086 9.29086 7 11.5 7H16.25M8.125 21.25C6.42891 21.25 5 19.8211 5 18.125V17.375M16.5 19.25C17.6046 19.25 18.5 18.3546 18.5 17.25C18.5 16.1454 17.6046 15.25 16.5 15.25C15.3954 15.25 14.5 16.1454 14.5 17.25C14.5 18.3546 15.3954 19.25 16.5 19.25Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    2 сертификат(а)
+                  </span>
+                </div>
+
+                <div class="producer-item-card__tags-group">
+                  <h4 class="producer-item-card__tags-heading text-medium">
+                    Продукция
+                  </h4>
+                  <div class="producer-item-card__tags">
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--product"
+                      >Протезы рук</span
+                    >
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--product"
+                      >Протезы ног</span
+                    >
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--product"
+                      >Миоэлектрические протезы</span
+                    >
+                  </div>
+                </div>
+
+                <div class="producer-item-card__tags-group">
+                  <h4 class="producer-item-card__tags-heading text-medium">
+                    Сертификация
+                  </h4>
+                  <div class="producer-item-card__tags">
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--cert"
+                      >ГОСТ Р ИСО</span
+                    >
+                    <span
+                      class="producer-item-card__tag producer-item-card__tag--cert"
+                      >Минздрав РФ</span
+                    >
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="info">
+      <div class="container">
+        <div class="footer__main">
+          <div class="footer__brand">
+            <a href="/" class="footer__logo title-h4"
+              >электронныйсертификат.рф</a
+            >
+            <p class="footer__description text-large">
+              Информационный портал о электронных сертификатах на технические
+              средства реабилитации
+            </p>
+          </div>
+          <div class="footer__nav-column">
+            <h3 class="footer__heading title-h4">Разделы</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__link text-large">О сертификате</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__link text-large">Категории ТСР</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__link text-large">Производители</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__link text-large"
+                  >Часто задаваемые вопросы</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__link text-large">Инструкции</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav-column">
+            <h3 class="footer__heading title-h4">Информация</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__link text-large"
+                  >Нормативные документы</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__link text-large"
+                  >Инструкции по оформлению</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__link text-large"
+                  >Справочная информация</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__link text-large"
+                  >Федеральный перечень ТСР</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__link text-large">Права инвалидов</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="footer__divider" />
+
+        <div class="footer__bottom">
+          <div class="footer__legal">
+            <span>© 2024 электронныйсертификат.рф. Все права защищены.</span>
+            <a href="#" class="footer__link">Политика конфиденциальности</a>
+            <a href="#" class="footer__link">Пользовательское соглашение</a>
+          </div>
+          <div class="footer__badges">
+            <span class="footer__badge">
+              <svg
+                width="25"
+                height="17"
+                viewBox="0 0 25 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.1634 8.38563C19.3 8.38563 21.0411 6.56776 21.0411 4.35588C21.0411 2.16916 19.3089 0.437012 17.1634 0.437012C15.0357 0.437012 13.2853 2.19475 13.2853 4.37294C13.2942 6.57629 15.0357 8.38563 17.1634 8.38563ZM6.82232 8.57411C8.67143 8.57411 10.1884 6.9878 10.1884 5.04158C10.1884 3.13801 8.68929 1.60329 6.82232 1.60329C4.97321 1.60329 3.44732 3.16402 3.45625 5.05864C3.46518 6.99675 4.97321 8.57411 6.82232 8.57411ZM17.1634 7.09099C15.8527 7.09099 14.7304 5.8906 14.7304 4.37294C14.7304 2.88044 15.8348 1.73207 17.1634 1.73207C18.5009 1.73207 19.596 2.86381 19.596 4.35546C19.596 5.87354 18.492 7.09099 17.1634 7.09099ZM6.82232 7.29653C5.72723 7.29653 4.79375 6.29357 4.79375 5.05864C4.79375 3.84971 5.71786 2.88087 6.82232 2.88087C7.95312 2.88087 8.85982 3.83266 8.85982 5.04158C8.85982 6.29357 7.92634 7.29653 6.82232 7.29653ZM1.83125 16.437H8.87812C8.44687 16.2055 8.11473 15.6908 8.17768 15.168H1.60714C1.42768 15.168 1.33795 15.0997 1.33795 14.9364C1.33795 12.8102 3.87812 10.821 6.81384 10.821C7.94464 10.821 8.95893 11.0781 9.82991 11.5668C10.1188 11.2174 10.4607 10.9111 10.8442 10.6581C9.68616 9.92887 8.29509 9.55191 6.81384 9.55191C3.05223 9.55191 0 12.1582 0 15.0136C0 15.9654 0.610268 16.437 1.83125 16.437ZM11.5259 16.437H22.8009C24.2906 16.437 25 16.0085 25 15.0652C25 12.8188 22.0286 9.56854 17.1634 9.56854C12.2888 9.56854 9.31786 12.8188 9.31786 15.0652C9.31786 16.0085 10.0268 16.437 11.5259 16.437ZM11.0951 15.1424C10.8616 15.1424 10.7629 15.0827 10.7629 14.9023C10.7629 13.4959 13.0429 10.864 17.1634 10.864C21.275 10.864 23.5545 13.4959 23.5545 14.9023C23.5545 15.0823 23.4652 15.1424 23.2312 15.1424H11.0951Z"
+                  fill="#75ABFE"
+                />
+              </svg>
+              Защищено SSL
+            </span>
+            <span class="footer__badge">
+              <svg
+                width="20"
+                height="25"
+                viewBox="0 0 20 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.5971 3.18733L10.4109 0.0567717C10.3 0.0189239 10.1513 0 10.0026 0C9.85396 0 9.70527 0.0189239 9.59443 0.0567717L0.408216 3.18733C0.183833 3.26303 0 3.52255 0 3.76045V16.8017C0 17.0396 0.154095 17.3532 0.340631 17.5019L9.65931 24.7633C9.75393 24.8363 9.87559 24.8741 9.99994 24.8741C10.1243 24.8741 10.2487 24.8363 10.3406 24.7633L19.6593 17.5019C19.8458 17.3559 19.9999 17.0423 19.9999 16.8017V3.76045C20.0053 3.52255 19.8215 3.26573 19.5971 3.18733ZM18.0588 16.2827L10.0026 22.56L1.94646 16.2827V4.72287L10.0026 1.9762L18.0588 4.72287V16.2827Z"
+                  fill="#2DBE3E"
+                />
+              </svg>
+              Госуслуги
+            </span>
+          </div>
+        </div>
+
+        <div class="footer__disclaimer">
+          <p>
+            <strong>Важно:</strong> Данный сайт является прототипом. Для
+            получения реального электронного сертификата ТСР обращайтесь на
+            официальный портал Госуслуг.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -220,15 +220,16 @@
     transition: color 0.3s ease, font-weight 0.3s ease;
 }
 .news-filter__option label:hover {
-    color: var(--color-primary);
+    color: var(--color-dark-blue);
 }
 
 .news-filter__option input[type="radio"]:checked + label {
-    color: var(--color-text-dark);
+    color: var(--color-dark-blue);
     font-weight: 600;
 }
+
 .news-filter__option input[type="radio"]:focus-visible + label {
-    outline: 2px solid var(--color-primary);
+    outline: 2px solid var(--color-dark-blue);
     outline-offset: 2px;
     border-radius: 4px;
 }

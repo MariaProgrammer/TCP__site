@@ -1,17 +1,408 @@
+.page__body {
+  background: #fff;
+}
+
 .header-block {
+  padding: 60px 0;
+ 
+
+}
+.header-block__icon {
+  flex: 0 0 auto;
+  /* display: block; */
+  position: relative;  
+  width: 128px;
+  height: 128px;
+  background: var(--color-dark-blue);
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  
+}
+.header-block__icon svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.header-block__title {
+  text-align: center;
+  margin-bottom: 32px;
+  color: var(--color-text-dark);
+}
+.header-block__descr { 
+  color: var(--color-text-light);  
+  max-width: 653px; 
 }
 
 .header-block__container {
+  margin-top: 60px;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 32px;
 }
-.header-news__btn {
+.header-block__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.header-block__btn {
+  display: inline-block;
+  width: auto;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background: #94A3B8; 
+  box-shadow: 0px 2px 4px 0px rgba(34, 60, 80, 0.2);
 }
 
-.btn__inner {
-}
-.header-block__icon {
-}
-.header-block__title {
+
+/* --Блок .about-category--- */
+.about-category {
+  padding-top: 60px;
 }
 
-.header-block__descr {
+.about-category__inner {
+  padding: 32px;
+  background: #fff;
+  border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
 }
+.about-category__title {
+  margin-bottom: 16px;
+  
+
+}
+
+.about-category__descr {
+  width: 100%;
+  max-width: 1000px;
+  line-height: 1.6;
+}
+
+/* --- Блок Category Filter --- */
+.category-filter {
+    padding: 4rem 0;
+}
+
+.category-filter__container {    
+    padding: 2.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    background-color: #fff;
+}
+
+.category-filter__title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;    
+    margin: 0 0 2rem 0;
+    color: var(--color-text-dark);
+}
+
+.category-filter__main {
+    display: grid;
+    /* 4 колонки, первая шире остальных */
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.category-filter__label {
+    display: block;
+    
+    margin-bottom: 1rem;
+    
+    color: var(--color-text-dark);
+}
+
+.category-filter__search-wrapper {
+    position: relative;
+}
+.category-filter__search-wrapper svg {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94A3B8;
+    pointer-events: none;
+}
+
+.category-filter__search-input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 3rem; /* Отступ для иконки */
+    font-size: 1rem;
+    font-family: var(--font-family);
+    border: var(--border);
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+    background-color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.category-filter__search-input:focus {
+    outline: none;
+    border-color: var(--color-dark-blue);
+    box-shadow: 0 0 0 3px var(--color-blue);
+}
+
+.category-filter__options-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.category-filter__option input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.category-filter__option label {
+    cursor: pointer;
+    color: var(--color-text-light);
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+.category-filter__option label:hover {
+    color: var(--color-dark-blue);
+}
+
+.category-filter__option input[type="radio"]:checked + label {
+    color: var(--color-dark-blue);
+    font-weight: 600;
+}
+.category-filter__option input[type="radio"]:focus-visible + label {
+    outline: 2px solid var(--color-dark-blue);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+.category-filter__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.category-filter__counter {
+    color: var(--color-text-light);
+}
+
+.category-filter__reset-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.25rem;
+    font-weight: 500;
+    color: var(--color-text-dark);
+    background-color: #fff;
+    border: var(--border);
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+.category-filter__reset-button:hover {
+    color: var(--color-dark-blue);
+    border-color: var(--color-dark-blue);
+}
+.category-filter__reset-button:focus-visible {
+    outline: none;
+    border-color: var(--color-dark-blue);
+    box-shadow: 0 0 0 3px var(--color-blue);
+}
+
+/* --- Адаптивность для фильтра --- */
+@media (max-width: 1024px) {
+    .category-filter__main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+  .category-filter {
+    padding-bottom: 2rem;
+  }
+    .category-filter__container {
+        padding: 1.5rem;
+    }
+    .category-filter__main {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .category-filter__footer {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+        align-items: stretch;
+        text-align: center;
+    }
+    .category-filter__reset-button {
+        justify-content: center;
+    }
+}
+
+/* --- Секция Producers --- */
+.producers {
+    padding: 2rem 0;
+}
+
+.producers__list {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+/* --- Карточка производителя --- */
+.producer-item-card {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    border: var(--border);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 45px;
+}
+
+.producer-item-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.producer-item-card__badge {
+    background-color: var(--color-dark-blue);
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.producer-item-card__title {
+    margin-bottom: 0.5rem;
+}
+
+.producer-item-card__description {
+    color: var(--color-text-light);
+    max-width: 60ch; /* Ограничиваем ширину текста для читаемости */
+}
+
+.producer-item-card__meta {
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос на всякий случай */
+    gap: 0.75rem 2rem; /* Отступы между элементами */
+    padding-bottom: 1rem;
+    border-bottom: var(--border);
+    color: var(--color-text-light);
+}
+
+.producer-item-card__meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.producer-item-card__tags-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.producer-item-card__tags-heading {
+    font-weight: 500;
+    color: var(--color-text-light);
+}
+
+.producer-item-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.producer-item-card__tag {
+    padding: 2px 10px;
+    border-radius: 6px;
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-text-dark);
+}
+/* Используем ваши цвета для тегов */
+.producer-item-card__tag--product {
+    background-color: var(--color-light-blue);
+    
+}
+.producer-item-card__tag--cert {
+    background-color: #2DBE3E; 
+    color: #fff;
+}
+
+
+/* --- Адаптивность (Mobile) --- */
+@media (max-width: 767px) {
+  .header-block__container {
+    margin-top: 30px;
+  }
+  .category-filter {
+    padding-top: 30px;
+  }
+  .header-block__icon {
+    width: 100px;
+    height: 100px;
+  }
+  .header-block__title {
+    margin-bottom: 12px;
+  }
+    .producer-item-card {
+        padding: 1rem;
+        margin-bottom: 24px;
+    }
+    
+    .producer-item-card__header {
+        /* На мобильных заголовок может быть длинным, лучше перенести бейдж вниз */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .producer-item-card__main-info {
+        order: 2; /* Текст после бейджа */
+    }
+
+    .producer-item-card__badge {
+        order: 1; /* Бейдж вверху */
+    }
+
+    /* Главное адаптивное изменение: мета-информация в столбик */
+    .producer-item-card__meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+}
+
+
+
+
