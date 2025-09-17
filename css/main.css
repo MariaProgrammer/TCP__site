@@ -1507,7 +1507,7 @@
 
 /* --- Сетка новостей (Desktop-first) --- */
 .news-slider .swiper-wrapper {
-  padding: 10px;
+  /* padding: 10px; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
