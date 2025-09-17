@@ -237,6 +237,7 @@
 }
 
 .stats__item {
+  align-self: stretch;
   width: auto;
   height: auto;
   background-color: #fff;
@@ -272,7 +273,7 @@
 /* --- Адаптивность --- */
 @media (min-width: 320px) {
   .container {
-    padding: 0 30px;
+    padding: 0 15px;
   }
   .hero {
     background: none;
@@ -304,7 +305,7 @@
   }
   .stats__list {
     grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
+    gap: 15px;
   }
   .stats__item {
     padding: 15px 20px;

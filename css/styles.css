@@ -203,7 +203,7 @@ body.no-scroll {
 }
 @media (min-width: 320px) {
   .container {
-    padding: 0 30px;
+    padding: 0 15px;
   }
 }
 
