@@ -992,6 +992,9 @@
     padding: 27px 45px;
     height: auto; /* Возвращаем авто-высоту для слайдов */
   }
+  .categories-info {
+    padding: 22px;
+  }
 }
 
 /* --- Блок Catalog --- */
