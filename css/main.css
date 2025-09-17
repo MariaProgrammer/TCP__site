@@ -1003,6 +1003,15 @@
     padding: 22px;
   }
 }
+@media (max-width: 650px) {
+  .category-card {
+    padding: 27px 22px;
+}
+.categories-info__title {
+  text-align: center;
+  line-height: 1.2;
+}
+}
 
 /* --- Блок Catalog --- */
 .catalog {
