@@ -228,12 +228,17 @@
 }
 
 .stats__list {
+  width: auto;
+  height: auto;
   display: grid;
+   align-items: stretch;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1.5rem;
 }
 
 .stats__item {
+  width: auto;
+  height: auto;
   background-color: #fff;
   border: var(--border);
   border-radius: var(--border-radius);
@@ -299,7 +304,7 @@
   }
   .stats__list {
     grid-template-columns: repeat(2, 1fr);
-    gap: 22;
+    gap: 22px;
   }
   .stats__item {
     padding: 15px 20px;
@@ -379,6 +384,26 @@
     justify-content: flex-end;
   }
 }
+
+@media (max-width: 650px) {
+  .stats__icon-wrapper {
+    width: 35px;
+    height: 35px;
+  }
+  .stats__value {
+    font-size: 1.5rem;
+  }
+  .stats {
+    padding-bottom: 40px;
+  }
+  .title-h2 {
+    line-height: 1.2;
+  }
+  
+
+
+}
+
 
 /* --- Блок About Certificate --- */
 .about-cert {
@@ -999,6 +1024,15 @@
     background: var(--color-light-blue);
     padding: 70px 0 40px 0;
 }
+@media (max-width: 650px) {
+  .catalog {
+    padding-top: 40px;
+  }
+  .faq {
+    padding: 40px 0;
+  }
+  
+}
 
 
 /* --- Блок Filters (Desktop-first) --- */
@@ -1591,6 +1625,11 @@
   outline: 3px solid var(--color-primary-dark);
   outline-offset: 2px;
 }
+@media (max-width: 650px) {
+  .news {
+    padding: 40px 0;
+  }
+}
 
 /* --- Блок Updates Banner --- */
 .updates-banner {
@@ -1655,7 +1694,7 @@
   /* Отменяем грид и активируем слайдер */
   .news-slider .swiper-wrapper {
     display: flex;
-    grid-template-columns: unset;
+    /* grid-template-columns: unset; */
     gap: unset;
     margin-bottom: 0; /* Убираем отступ, т.к. пагинация его заменит */
   }
@@ -1679,6 +1718,13 @@
 
   .updates-banner__list {
     grid-template-columns: 1fr;
-    gap: 38px;
+    gap: 16px;
+  }
+  .updates-banner {
+    padding: 22px;
+  }
+  .news-card {
+    padding: 22px;
+    background: #D9E9FF;
   }
 }
