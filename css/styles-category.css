@@ -65,6 +65,21 @@
   background: #94A3B8; 
   box-shadow: 0px 2px 4px 0px rgba(34, 60, 80, 0.2);
 }
+@media (max-width: 768px) {
+    .header-block {
+        padding-bottom: 30px;
+    }
+    .header-block__title {
+        text-align: left;
+    }
+    .header-block__icon svg {
+        width: 60px;
+        height: 60px;
+    }
+    .about-category {
+        padding-top: 30px;
+    }
+}
 
 
 /* --Блок .about-category--- */
