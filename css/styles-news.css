@@ -275,6 +275,9 @@
 
 /* --- Адаптивность для фильтра --- */
 @media (max-width: 767px) {
+    .news-filter {
+    padding: 30px 0;
+}
     .news-filter__container {
         padding: 1.5rem;
     }
@@ -395,6 +398,9 @@
 
 /* --- Адаптивность (Desktop) --- */
 @media (min-width: 768px) {
+    .news-list {
+        padding: 2rem 0;
+    }
     .news-card-detailed__toggle-btn {
         width: auto; /* На десктопе кнопка по контенту */
     }
@@ -403,6 +409,11 @@
         /* flex-direction: row; */
         justify-content: space-between;
         align-items: flex-start;
+    }
+}
+@media (min-width: 320px) {
+    .news-list {
+        padding: 1rem 0 3rem;
     }
 }
 
