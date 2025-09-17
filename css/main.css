@@ -314,6 +314,9 @@
   .stats__item:nth-child(4) {
     background: var(--color-medium-blue);
   }
+  .stats__description {
+    font-size: 12px;
+  }
 }
 
 /* Планшеты */
@@ -358,6 +361,9 @@
   .stats__item:nth-child(1),
   .stats__item:nth-child(4) {
     background: #fff;
+  }
+  .stats__description {
+    font-size: 16px;
   }
 }
 @media (min-width: 1200px) {
