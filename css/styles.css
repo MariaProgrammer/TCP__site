@@ -92,7 +92,7 @@ body.no-scroll {
 
 
 /* Общие контейнеры */
-.header__container,
+/* .header__container,
 
 .stats__container {
     max-width: var(--container-width);
@@ -100,7 +100,7 @@ body.no-scroll {
     margin-right: auto;
     padding-left: var(--container-padding);
     padding-right: var(--container-padding);
-}
+} */
 
 @font-face {
   font-family: "Bebas Neue"; /* Используйте имя напрямую, а не переменную */
